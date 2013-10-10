@@ -16,7 +16,9 @@
     "mocha": "~1.13.0"
   },
   "gitHead": "85f5503da1947ca868eb30bfae0f9b3c0a15c96b",
-  "dependencies": {},
+  "dependencies": {
+    "git-node": "~0.1.1"
+  },
   "keywords": [
     "node",
     "server",
