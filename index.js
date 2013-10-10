@@ -8,10 +8,6 @@ module.exports = function (app, endpoint) {
     };
 
     app.get(endpoint || '/info', function (req, res) {
-        res.send(require(resolve('./package')));
-    });
-
-    app.get('/version', function (req, res) {
         var repo = git.repo(resolve('.git'));
 
         repo.load('HEAD', function (err, commit) {
@@ -19,7 +15,10 @@ module.exports = function (app, endpoint) {
                 return res.send(500, 'could not lookup repo for server');
             }
 
-            res.send(commit.body);
+            res.send({
+                packageVersion: require(resolve('./package')).version,
+                gitCommit:      commit.body.tree
+            });
         });
     });
 };
