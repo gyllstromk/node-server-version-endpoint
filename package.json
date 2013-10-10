@@ -1,0 +1,29 @@
+{
+  "name": "node-server-version-endpoint",
+  "version": "0.0.0",
+  "description": "ERROR: No README data found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gyllstromk/node-server-version-endpoint.git"
+  },
+  "author": "Karl Gyllstrom",
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  },
+  "gitHead": "85f5503da1947ca868eb30bfae0f9b3c0a15c96b",
+  "dependencies": {},
+  "keywords": [
+    "node",
+    "server",
+    "express",
+    "http"
+  ],
+  "bugs": {
+    "url": "https://github.com/gyllstromk/node-server-version-endpoint/issues"
+  }
+}
